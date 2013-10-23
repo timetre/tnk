@@ -1,3 +1,5 @@
+.DS_STORE
+
 # Bootstrap
 app/bootstrap*
 

@@ -1,0 +1,7 @@
+parameters:
+#    tnk_global.example.class: TNK\Bundle\GlobalBundle\Example
+
+services:
+#    tnk_global.example:
+#        class: %tnk_global.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

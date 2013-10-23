@@ -1,0 +1,12 @@
+tnk_blog:
+    resource: "@TNKBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+tnk_admin:
+    resource: "@TNKAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+tnk_global:
+    resource: "@TNKGlobalBundle/Resources/config/routing.yml"
+    prefix:   /
+
