@@ -1,0 +1,38 @@
+{% extends '::base.html.twig' %}
+
+{% block headline %}
+    <h1>Catégorie : {{ entity.titre }}</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="col-lg-12">
+
+        <div class="header-buttons pull-right">    
+            <a href="{{ path('categorie') }}" class="btn btn-info">Retour à la liste</a>
+
+            <a href="{{ path('categorie_edit', { 'id': entity.id }) }}" class="btn btn-warning">Modifier</a>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>Titre</th>
+                    <td>{{ entity.titre }}</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>{{ entity.description|raw }}</td>
+                </tr>
+                <tr>
+                    <th>Ordre</th>
+                    <td>{{ entity.ordre }}</td>
+                </tr>
+            </tbody>
+        </table>   
+    </div>
+{% endblock %}

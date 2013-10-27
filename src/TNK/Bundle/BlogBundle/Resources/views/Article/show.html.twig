@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+{% from 'MopaBootstrapBundle::macros.html.twig' import label, badge %}
+
+{% block headline %}
+    <h1>Article : {{ entity.titre }}</h1>
+{% endblock %}
+
+{% block content %}
+
+     <div class="col-lg-12">
+
+        <div class="header-buttons pull-right">    
+            <a href="{{ path('article') }}" class="btn btn-info">Retour à la liste</a>
+
+            <a href="{{ path('article_edit', { 'id': entity.id }) }}" class="btn btn-warning">Modifier</a>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>Titre</th>
+                    <td>{{ entity.titre }}</td>
+                </tr>
+                <tr>
+                    <th>Résumé</th>
+                    <td>{{ entity.resume|raw }}</td>
+                </tr>
+                <tr>
+                    <th>Contenu</th>
+                    <td>{{ entity.contenu|raw }}</td>
+                </tr>
+                <tr>
+                    <th>Date de création</th>
+                    <td>{{ entity.dateCreation|date('d/m/Y') }}</td>
+                </tr>
+                <tr>
+                    <th>Date de modification</th>
+                    <td>{{ entity.dateModification|date('d/m/Y') }}</td>
+                </tr>
+                <tr>
+                    <th>Date de publication</th>
+                    <td>{{ entity.datePublication|date('d/m/Y') }}</td>
+                </tr>
+                <tr>
+                    <th>Actif</th>
+                    <td>{{ entity.actif }}</td>
+                </tr>
+                <tr>
+                    <th>Slug</th>
+                    <td>{{ entity.slug }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ul>
+{% endblock %}

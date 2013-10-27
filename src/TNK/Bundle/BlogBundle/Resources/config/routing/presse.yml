@@ -1,0 +1,29 @@
+presse:
+    pattern:  /
+    defaults: { _controller: "TNKBlogBundle:Presse:index" }
+
+presse_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TNKBlogBundle:Presse:show" }
+
+presse_new:
+    pattern:  /new
+    defaults: { _controller: "TNKBlogBundle:Presse:new" }
+
+presse_create:
+    pattern:  /create
+    defaults: { _controller: "TNKBlogBundle:Presse:create" }
+    requirements: { _method: post }
+
+presse_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TNKBlogBundle:Presse:edit" }
+
+presse_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TNKBlogBundle:Presse:update" }
+    requirements: { _method: post|put }
+
+presse_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TNKBlogBundle:Presse:delete" }

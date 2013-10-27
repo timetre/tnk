@@ -1,5 +1,12 @@
 {% extends '::base.html.twig' %}
+{% from 'MopaBootstrapBundle::macros.html.twig' import label, badge %}
+
+{% block headline %}
+    <h1>The Nail Kitchen</h1>
+{% endblock %}
 
 {% block content %}
-	test
+	<div class="col-lg-6">
+		Bienvenue sur l'administration du site The Nail Kitchen
+	</div>
 {% endblock %}

@@ -1,0 +1,20 @@
+{% extends '::front.html.twig' %}
+
+{% block archives %}
+    {% for archive in archives %}
+        <p style="text-align: left;">
+            <a href="{{ path('article_front_show_presse', {'id': archive.id}) }}">{{ archive.titre }} - {{ archive.dateModification|date('d/m/Y') }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
+
+{% block article %}
+    <div class="breadcrumb">
+        <span class="navigation_page">{{ entity.titre }}</span>
+    </div>
+
+    <div>
+        <img src="/{{ entity.webPathImage }}" width="500px;"/>
+    </div>
+{% endblock %}
+

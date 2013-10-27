@@ -1,0 +1,41 @@
+form.compare input.button{overflow:visible;}
+form.pagination select{margin-top:3px;}
+#more_info_sheets input#addCommentButton,#more_info_sheets #sendComment p.submit input{line-height:20px;}
+#center_column{padding-bottom:28px;}
+div.pagination{width:56%;}
+.sortPagiBar{width:44%;}
+#authentication p.cart_navigation input{float:left;}
+#authentication #login_form p.text input{float:none;}
+#create-account_form h4{margin-bottom:40px;}
+#order .addresses.clearfix div.clearfix,.opc-main-block .addresses.clearfix div.clearfix,#addresses .addresses .bloc_adresses.clearfix{width:100%;}
+div#newsletter_block_left div.block_content input.button_mini,#password p.submit input,.SE_SubmitRefreshCard input{overflow:visible;}
+/* line-height */
+p.cart_navigation .exclusive span,p.cart_navigation .out-button .exclusive,p.cart_navigation.submit a.button span,p.cart_navigation a.exclusive.standard-checkout,#authentication #create-account_form p.submit input,#order p.cart_navigation a.button,#order p.cart_navigation input.exclusive,div.addresses #address_invoice_form a.button_large, div.addresses .address_add a.button_large, p.cart_navigation .exclusive_large_disabled,#cart_block p#cart-buttons a.button_small,#cart_block p#cart-buttons a#button_order_cart,#authentication .cart_navigation.submit input.exclusive,#authentication #login_form p.submit input,#password p.submit input,.SE_SubmitRefreshCard input,p.cart_navigation a.button_large,div#newsletter_block_left div.block_content input.button_mini,form.pagination input.button_mini,.compare p input.button{line-height:25px;padding-bottom:0 !important;}
+#order form#voucher .button, #order-opc form#voucher .button,p.cart_navigation a.exclusive.standard-checkout,div.addresses #address_invoice_form a.button_large, div.addresses .address_add a.button_large{line-height:26px;}
+
+#address #submitAddress.button{line-height:25px;}
+#history #block-history #sendOrderMessage p.submit input.button{line-height:25px;}
+.top_footer-cms span{padding-top:3px;}
+#tabs{margin-bottom:56px;}
+.bottom_footer-cms{margin-top:30px;}
+ul#product_list{padding-top:25px;}
+ul#product_list li{padding-bottom:35px;}
+#primary_block p.buttons_bottom_block a, #primary_block p.buttons_bottom_block input{overflow:visible;}
+#identity p.submit input{line-height:23px;padding-bottom:0 !important;margin-left:-132px;}
+#order-opc div.opc-main-block  p.checkbox input{vertical-align:-2px;}
+#order-opc div.opc-main-block  p.radio input{margin-top:-3px !important;}
+#my-account #center_column li a{line-height:44px;}
+#my-account #center_column li{margin-bottom:9px}
+#block-order-detail h4 input.button.exclusive{line-height:26px !important;padding-bottom:0 !important}
+p.cart_navigation input.exclusive_large{line-height:25px !important;padding-bottom:0 !important}
+#order body{background:none;}
+#index .ui-tabs .ui-tabs-nav li:first-child a{padding:0 20px 0 0;}
+#order p.warning,#order .error{float:left;width:683px;}
+.content_sortPagiBar{height:43px;}
+.cart_last_product{margin-top:-41px;}
+#order p.success{float:left;}
+ul.step li{border-bottom:1px solid #E5E5E5}
+#cart_block p#cart-buttons a#button_order_cart,#cart_block p#cart-buttons a.button_small{line-height:26px;padding-bottom:0 !important;}
+#special_block_right .block_content .products{padding-top:1px;}
+#order-opc div.opc-main-block #opc_account_form p.radio label, #order-opc div.opc-main-block #opc_account_form p.radio span{line-height:17px;}
+ul#product_list li div.center_block .compare{line-height:15px;}

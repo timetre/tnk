@@ -1,0 +1,9 @@
+#header_right #languages_block_top{color:#9e9d9d;width:auto;#width:114px;position:absolute;top:6px;right:145px;text-transform:uppercase;font-weight:700;font-size:10px}
+#header_right #languages_block_top span,
+#header_right #languages_block_top ul{color:#9e9d9d;float:left;}
+#header_right #languages_block_top p{clear:left}
+#languages_block_top ul#first-languages li{float:left;margin-left:10px;margin-right:4px;text-transform:uppercase;}
+#languages_block_top ul#first-languages li a:hover{color:#EE3C1F}
+#languages_block_top ul#first-languages li.selected_language{color:#EE3C1F;float:left;}
+#languages_block_top ul#first-languages li a{color:#9e9d9d;text-decoration:none}
+#header_right #languages_block_top ul{float:right}

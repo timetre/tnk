@@ -1,0 +1,84 @@
+#primary_block #pb-right-column{float:left;margin-right:20px;width:302px}
+#primary_block #pb-right-column p{width:auto;float:left}
+#primary_block #pb-right-column #wrapResetImages{text-align:left}
+#primary_block #pb-right-column #wrapResetImages a{  color: #7e7e7e;
+    font-size: 10px;
+    font-weight: 700;text-transform:uppercase}
+#primary_block #pb-right-column #wrapResetImages img{float:left;margin:2px 5px 0 0;}
+#primary_block #image-block{text-align:left;margin-bottom:10px;}
+#primary_block #image-block img{cursor:pointer;}
+#primary_block ul#usefull_link_block{   float: left;
+    list-style-type: none;
+    margin-left: 5px;
+    margin-top: 7px;
+    width: auto;}
+#primary_block ul#usefull_link_block li{   background:url("../img/line.jpg") no-repeat scroll left top transparent;padding-left:16px;margin-left:5px;
+    color: #7e7e7e;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: 700;text-transform:uppercase}
+#primary_block ul#usefull_link_block li a,#primary_block ul#usefull_link_block span.span_link,#primary_block ul#usefull_link_block span.span_link:hover{   color: #8d8d8d;
+    font-size: 10px;
+    padding: 0 7px;
+    }
+#primary_block #pb-left-column{float:left;position:relative;width:393px;}
+.logo_pro{width:auto;float:left}
+#primary_block #pb-left-column .price{float:left;width:auto}
+#primary_block #pb-left-column .price p.our_price_display{font-size:18px;font-weight:400;clear:both;}
+#primary_block #pb-left-column h1{color:#000000;font-size:18px;font-weight:400;margin-bottom:5px;padding:0;text-transform:none;background:none;width:65%;position:relative;top:0;left:0;line-height:17px;height:auto;overflow:hidden;float:left;font-family:'HelveticaRegular';}
+#primary_block #pb-left-column .availability{color:#53ad22;float:left;font-size:10px;font-weight:700;margin-bottom:5px;text-transform:uppercase;width:100%;margin-right:10px;margin-top:2px;}
+#primary_block #pb-left-column .outofstock{color:#A2A2A2;float:left;font-size:10px;font-weight:700;margin-bottom:5px;text-transform:uppercase;width:100%;margin-right:10px;}
+#primary_block #short_description_block{float:left;margin:5px 0 20px;width:100%;border-bottom:1px solid #ccc}
+#primary_block #color_picker p{color:#373d42;font-size:12px;font-weight:700;margin-bottom:.4em;padding:0}
+#primary_block #color_picker{display:none;float:left;padding:.6em .7em .4em 0;width:95%}
+#primary_block #color_to_pick_list li{display:inline;float:left;margin:0 .4em 0 0}
+#primary_block a.color_pick{cursor:pointer;display:block;height:23px;width:23px}
+#primary_block a#color_all{cursor:pointer}
+#primary_block #image-block img#bigpic.jqzoom{cursor:crosshair;position:relative}
+#primary_block p.buttons_bottom_block{float:right!important;margin:0!important;width:auto}
+#primary_block p.buttons_bottom_block a,#primary_block p.buttons_bottom_block input{ border:none;width:auto;/*background:#ee3c1f;*/color:#fff!important;#line-height:35px;height:37px;line-height:37px;padding:0 20px;font-size:14px;font-weight:400;font-family: 'HelveticaBold';}
+#primary_block #short_description_content{}
+#primary_block #buy_block{color:#7e7e7e;float:left;font-size:12px;margin-bottom:1.5em;position:relative;width:100%}
+#primary_block #buy_block p label,#primary_block #buy_block p #availability_label{  color:#262525;
+    font-size: 12px;line-height:15px;
+    font-weight:700;
+    margin-top: 5px;
+    padding-right: 10px;
+    text-align: left;
+    text-transform:uppercase;
+    width:23% !important;}
+#primary_block #buy_block p{float:none;margin-top:0;padding:0}
+#primary_block #buy_block p#add_to_cart{float:left !important;margin-top:22px !important;clear:both;}
+#primary_block #buy_block p#pQuantityAvailable,#primary_block #buy_block p#last_quantities{float:left;margin-top:10px;width:100%;display:none!important}
+#primary_block #buy_block span.on_sale{color:#da0f00;float:right;font-weight:700;text-transform:none}
+#primary_block #buy_block span.discount{color:#5a5a5a!important;float:left;font-size:10px;font-weight:bold;text-transform:uppercase;margin-bottom:8px;}
+#primary_block #buy_block span.our_price_display span.price{color:#282828;float:left;font-size:17px;font-weight:700}
+#primary_block #buy_block span.our_price_display span.tax{color:#5a5a5a;font-size:13px;margin-left:5px;padding-top:5px;line-height:25px}
+#availability_statut #availability_label{margin-top:4px}
+#primary_block #buy_block label{display:block;float:left;text-align:left;width:23%;padding-right:10px;line-height:24px;}
+#primary_block #buy_block select{color:#7e7e7e;display:block;float:left;height:25px;line-height:20px;padding:3px;width:238px}
+#primary_block div#attributes p,#quantity_wanted_p{clear:left;height:25px}
+#primary_block div#attributes p,#minimal_quantity_wanted_p{clear:left;text-align:center}
+#primary_block #buy_block p.price{font-size:18px;line-height:23px;text-align:left;margin-bottom:10px;}
+#primary_block #buy_block p.price span{color:#262525;font-weight:400;}
+#primary_block #buy_block p#old_price{border-left:1px solid #d9d9d9;float:left;font-size:12px;height:20px;margin-left:10px;padding-left:10px;padding-top:24px;text-align:left;width:auto}
+#primary_block #buy_block p#old_price #old_price_display{  text-decoration:none;}
+#primary_block #buy_block #reduction_percent span{color:#5a5a5a;font-size:12px;font-weight:700;line-height:29px}
+#primary_block #buy_block p#reduction_percent{color:#5a5a5a;font-size:12px;text-align:left;margin-top:17px;font-weight:700;float:left;margin-left:6px;}
+#admin-action{background-color:#DFFAD3;border:1px solid #72CB67;color:#374853;margin-bottom:10px;padding:4px}
+#admin-action input.exclusive{float:right}
+.product_accessories_price{margin-top:5px}
+#attributes,#availability_statut{float:left!important;width:100%;margin-top:30px;}
+#quantity_wanted_p{float:left!important;width:100%}
+#quantity_wanted_p label{width:31%!important;}
+#quantity_wanted_p input{float:left;height:23px;line-height:25px;margin:0;padding:0 0 0 5px !important;width:231px;color:#7e7e7e;font-size:12px;}
+#availability_statut #availability_value{float:left;font-size:12px;margin-top:5px}
+#primary_block #buy_block span#pretaxe_price,#primary_block #buy_block p.price-ecotax{font-size:.75em;text-align:left}
+#usefull_link_block a,#usefull_link_block span{display:block}
+#product .left-buyblock{clear:left;float:left;margin-top:35px;width:100%}
+#primary_block #buy_block img.on_sale_img,#primary_block #buy_block span#availability_label{float:left}
+.pr-opr{overflow:hidden;border-bottom:1px dotted #e8e8e8;padding-bottom:10px;margin-bottom:20px;}
+.share{width:auto;float:right;}
+/* 1.5.1 */
+.product_attributes #attributes .attribute_fieldset {border:none;margin-bottom:10px;}

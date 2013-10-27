@@ -20,11 +20,12 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "apy/datagrid-bundle": "dev-master",
-        "mopa/bootstrap-bundle": "v3.0.0-beta2",
-        "twbs/bootstrap": "v3.0.0",
+        "mopa/bootstrap-bundle": "dev-master",
+        "twbs/bootstrap": "dev-master",
         "knplabs/knp-paginator-bundle": "dev-master",
         "knplabs/knp-menu-bundle": "dev-master",
-        "knplabs/knp-menu": "2.0.*@dev"
+        "knplabs/knp-menu": "2.0.*@dev",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "scripts": {
         "post-install-cmd": [

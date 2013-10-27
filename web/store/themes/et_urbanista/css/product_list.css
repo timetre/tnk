@@ -1,0 +1,53 @@
+.shopbybrand{padding:20px 0 30px;margin-bottom:10px;}
+.shopbybrand ul{overflow:hidden}
+.shopbybrand li{ float: left;
+    width: 225px;margin-right:20px;position:relative;height:auto;}
+.shopbybrand li.last_item{margin-right:0}
+.shopbybrand li p.product_img_link {
+    text-align: center;margin:12px 0 18px !important;
+    width: 100%;height:auto;
+}
+.shopbybrand li p.manufacture{width:100%;text-align:left;}
+.shopbybrand li a.button{background:transparent url(../img/shopbybrand_button.png) no-repeat center;width:206px;color:#e1e0e0!important}
+.shopbybrand li.last_item{margin-right:0}
+.shopbybrand li h3{margin: 7px 0 5px;text-align:left;  color: #000;
+    font-size: 12px;
+    font-weight:400;}
+.shopbybrand li h3 a{color:#747373;
+    font-size:12px;
+    font-weight:400;font-family:'HelveticaBold';}
+.shopbybrand li h3 a:hover{color:#EE3C1F;text-decoration:none;}
+.shopbybrand li p{text-align:left;margin:0!important;color:#7e7e7e;font-size:12px;}
+.shopbybrand li p.shopnow{color:#ee3c1f;font-size:12px;font-weight:400;margin-top:10px!important;font-family:'HelveticaBold';}
+.shopbybrand li p.shopnow a{color:#ee3c1f;}
+#category .cycleElementsContainer{margin-bottom:10px;padding-bottom:10px;margin-left:1px;}
+ul#product_list{margin-bottom:10px;list-style-type:none;padding:30px 0 3px;overflow:hidden;width:100%;border-bottom:1px solid #e1e1e1;}
+ul#product_list .line{   background: url("../img/shadow_2.png") no-repeat scroll left bottom transparent;
+    margin: 0 20px 20px;width:728px;float:left;
+    padding-bottom: 10px;#display:none}
+ul#product_list li{ float: left;
+    width: 225px;margin-right:20px;position:relative;height:auto;padding:18px 0 40px;}
+ul#product_list li.last_item_of_line{margin-right:0}
+* html ul#product_list li{height:auto!important}
+ul#product_list li a{text-decoration:none}
+ul#product_list a.product_img_link{text-align:center;width:100%;display:block}
+ul#product_list a.product_img_link img{vertical-align:bottom}
+ul#product_list li h3{float:left;margin:0px!important;width:100%;padding:7px 0 5px;}
+ul#product_list li h3 a{color:#747373;font-size:12px;font-weight:400;display:block;width:100%;font-family:'HelveticaBold';}
+ul#product_list li h3 a:hover{color:#747373;}
+ul#product_list li p.product_desc{float:left;font-size:12px;margin:5px 0 10px;padding:0;width:100%}
+ul#product_list li p.product_desc a{color:#7e7e7e;display:block;width:100%;font-size:12px;}
+ul#product_list li div.center_block{float:left;width:100%;margin:0!important}
+ul#product_list li div.center_block div{float:left;margin:0 0 5px!important;width:auto}
+ul#product_list li div.center_block .compare{color:#bbbbbb;float:left;font-size:12px;margin:10px 0 0;padding:0;width:100%;font-weight:400;line-height:13px;#line-height:15px;}
+ul#product_list li div.right_block{float:left;margin-left:1em;margin-top:0;text-align:right;width:11em}
+ul#product_list li .discount,ul#product_list li .on_sale,ul#product_list li .online_only{color:#da0f00;display:block;font-weight:700;text-transform:uppercase}
+ul#product_list li .reduction{display:block;margin-bottom:.3em}
+ul#product_list li .price{display:block;float:left;font-size:12px;font-weight:700;width:100%;line-height:25px;}
+ul#product_list li div .button,ul#product_list li div .exclusive{float:left;font-size:12px!important;font-weight:700;line-height:25px;height:25px;text-transform:uppercase;width:auto;padding:0 10px;background:none;border:1px solid #CCCCCC;clear:both;margin:6px 0;}
+:root ul#product_list li div .button,:root ul#product_list li div .exclusive{line-height:27px \0;}
+ul#product_list li span.availability,ul#product_list li span.outofstock{float:left;font-size:10px;font-weight:700;margin:0 0 5px;width:100%}
+ul#product_list li span.availability{color:#53ad22;font-size:10px;font-weight:700;text-transform:uppercase}
+ul#product_list li span.outofstock{color:#a2a2a2;font-size:10px;font-weight:700;text-transform:uppercase}
+ul#product_list li p.compare input{background:none;border:none;height:auto;margin:0 8px 0 0px;padding:0;vertical-align:-3px;float:left}
+ul#product_list li p.compare label{float:left;color:#7e7e7e;font-size:10px;font-weight:700}

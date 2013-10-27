@@ -1,0 +1,11 @@
+ul#header_links{  height: 25px;
+    position: absolute;
+    left: 0;
+    top:1px;
+    width: auto;
+    z-index: 0;}
+#header_links li#header_link_home{margin-left:0}
+#header_links li{float:left;height:25px;width:auto;line-height:25px;}
+#header_links li#header_link_home a{padding-left:0}
+#header_links li a:hover,#header_links li.active a{color:#9e9d9d;/*ee3c1f*/}
+#header_links a{color:#9e9d9d;display:block;font-size:10px;height:25px;line-height:25px;text-align:center;text-decoration:none;font-weight:700;text-transform:uppercase;padding:0 10px;}

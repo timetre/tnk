@@ -1,0 +1,126 @@
+.cycleElementsContainer { padding:0;} 
+	.cycleElementsContainer .demoNavigation { clear: both; padding-top: 10px; float: none;}
+	.cycleElementsContainer .cycleElementsArrow {}
+	.cycleElementsContainer .cycleElementsArrow a{width:25px;height:25px;float:left;text-indent:-9999px;background-image: url('images/bkg_pre_next.png');margin-bottom:1px}
+	.cycleElementsContainer .cycleElementsArrow a#cycleLeft-1,.cycleElementsContainer .cycleElementsArrow a#cycleLeft-1:hover,
+	.cycleElementsContainer .cycleElementsArrow a#cycleLeft-2,.cycleElementsContainer .cycleElementsArrow a#cycleLeft-2:hover,
+	.cycleElementsContainer .cycleElementsArrow a#cycleLeft-3,.cycleElementsContainer .cycleElementsArrow a#cycleLeft-3:hover{background-position:100% 100%;right:32px;}
+	.cycleElementsContainer .cycleElementsArrow a#cycleRight-1,.cycleElementsContainer .cycleElementsArrow a#cycleRight-1:hover,
+	.cycleElementsContainer .cycleElementsArrow a#cycleRight-2,.cycleElementsContainer .cycleElementsArrow a#cycleRight-2:hover,
+	.cycleElementsContainer .cycleElementsArrow a#cycleRight-3,.cycleElementsContainer .cycleElementsArrow a#cycleRight-3:hover{background-position:0 0;right:10px;}
+	
+	/* Common List Styles
+ 	* ---------------------- */
+	.cycleElementsContainer ul{}
+	.cycleElementsContainer li {
+	float: left;
+    height:auto;
+    margin-right: 20px;
+    position: relative;
+    width: 225px;
+	}
+	.cycleElementsContainer li.last_item_of_line{border-right:none;}
+	.codespot_top_tabs{width:960px;overflow:hidden;position:relative;}
+/*.cycleElementsContainer li.first_item{margin-left:0}*/
+.cycleElementsContainer li span.discount{display:none}
+.cycleElementsContainer li h3{   
+	padding:15px 0 1px;
+}
+.cycleElementsContainer li h3 a{color:#747373;font-size:12px;font-weight:400;font-family: 'HelveticaBold';}
+.cycleElementsContainer li h3 a:hover{color:#EE3C1F;text-decoration:none;}
+	.cycleElementsContainer li  p.product_desc {
+    margin: 0 5px !important;
+	padding:0 !important;
+	color: #595A5E;
+    font-size: 12px;
+	height:9em;
+}
+.cycleElementsContainer li  a.product_image{
+	display: block;
+    text-align: center;
+}
+.cycleElementsContainer li .products_list_price{color: #262525;
+    float: left;
+    font-size:12px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    width: auto;font-weight:700;}
+.cycleElementsContainer li .products_list_price p{float:left;}
+#center_column .cycleElementsContainer li .products_list_price p.old_price{margin-right:10px;text-decoration:line-through;}
+#center_column .cycleElementsContainer li .products_list_price p.old_price span{font-weight:400;}
+.cycleElementsContainer li .products_list_price span{color:#262525;
+    font-size:12px;}
+.cycleElementsContainer li .products_list_price .reduction_percent span	{color: #FFFFFF;
+    display:block;
+    font-size:12px;
+    font-weight:400;
+    text-align:center;
+    text-transform:lowercase;
+    width: 100%;font-family: 'HelveticaRegular';}
+.cycleElementsContainer li .products_list_price .reduction_percent span.reduction_percent_display{font-size:16px;
+    font-weight: 400;}
+.cycleElementsContainer li div a.button{margin:0.5em auto; text-align:center}
+.cycleElementsContainer li .products_list_price span.price-discount{margin-right:10px;color:#646464 !important}
+.cycleElementsContainer li a.button.ajax_add_to_cart_button , .cycleElementsContainer li .exclusive{background: url("images/button-medium_exclusive.png"); margin:0.5em auto; text-align:center}
+.cycleElementsContainer li a.button.ajax_add_to_cart_button  span, .cycleElementsContainer li .exclusive span{}
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding:0 0 10px; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; margin:0; border-bottom: 0 !important; padding: 0; white-space: nowrap;height:21px;}
+.ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none;color:#7f7f7f;font-size:12px;text-transform:uppercase;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0;height:17px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color: #000;}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+/* Component containers
+----------------------------------*/
+#tabs{margin:42px 0 50px}
+.ui-widget { position:relative}
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-size: 1em; }
+.ui-widget-content {width:100%; margin:0 auto}
+.ui-widget-content a { color: #222222/*{fcContent}*/; }
+.ui-widget-header {}
+.ui-widget-header a { color: #222222/*{fcHeader}*/; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555/*{fcDefault}*/; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {}
+.ui-state-hover a, .ui-state-hover a:hover { color: #000/*{fcHover}*/; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {/*background: url(images/bkg_tab_select.jpg) repeat 0 -1px */}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121/*{fcActive}*/; text-decoration: none; }
+.ui-widget :active { outline: none; }

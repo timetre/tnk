@@ -1,7 +1,96 @@
 {% extends 'MopaBootstrapBundle::base.html.twig' %}
+{% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
+{% from 'MopaBootstrapBundle::macros.html.twig' import label, badge %}
 
-{% block title %}The Nail Kitchen{% endblock %}
 
-{% block navbar %}
+{% block head_bottom %}
+    {{ parent() }}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head_bottom %}
+
+{% block head_style %}
+    {{ parent() }}
+    {% stylesheets output='css/utils.css' filter="cssrewrite"
+        '@TNKAdminBundle/Resources/public/css/main.css'
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+{% endblock head_style %}
+
+{% block head_script %}
+    {% javascripts
+        'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+        '@MopaBootstrapBundle/Resources/public/bootstrap/js/dropdown.js'
+        '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js'
+        '@TNKAdminBundle/Resources/public/js/main.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    <script type="text/javascript" src="/ckfinder/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/ckfinder/ckfinder.js"></script>
+    {% endjavascripts %}
+{# Overwrite this block to add your own js here, to get them generated into final files #}
+{% endblock head_script %}
+
+{% block title %}The Nail Kitchen - Administration{% endblock title %}
+
+{% block body %}
+
+    {% block navbar %}
+        <div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="{{ path('tnk_admin_homepage') }}">The Nail Kitchen</a>
+                    </div>
+
+                    
+                    {{ mopa_bootstrap_menu('TNKAdminBundle:Builder:mainMenu') }}
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="last">
+                            <a href="#">Bienvenue {{ app.user.username }}</a>
+                        </li> 
+                        <li class="last">
+                            <a href="{{ path('fos_user_security_logout') }}" class="pull-right clearfix">Se déconnecter</a>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endblock navbar %}
     
-{% endblock navbar %}
+    <div class="container">
+        <div class="content">
+
+            {% block page_header %}
+                <div class="page-header">
+                    {% block headline %}{% endblock headline %}
+                </div>
+            {% endblock page_header %}
+
+            <div class="row">
+                {% block flashbag %}
+                    {% for type, messages in app.session.flashbag.all() %}
+                        {% for message in messages %}
+                            <div class="col-lg-6 alert alert-{{ type }}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                {% endblock %}
+
+                {% block content %} {% endblock %}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block foot_script %}
+    
+   
+{% endblock foot_script %}
+
+{% block foot_script_additional %}{% endblock foot_script_additional %}

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<options>
+<effect>fold</effect>
+<animSpeed>10500</animSpeed>
+<pauseTime>3000</pauseTime>
+<directionNav>false</directionNav>
+<directionNavHide>false</directionNavHide>
+<controlNav>false</controlNav>
+<controlNavThumbs>false</controlNavThumbs>
+<pauseOnHover>true</pauseOnHover>
+<manualAdvance>false</manualAdvance>
+</options>

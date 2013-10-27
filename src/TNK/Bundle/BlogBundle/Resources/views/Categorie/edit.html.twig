@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+{% from 'MopaBootstrapBundle::macros.html.twig' import label, badge %}
+
+{% block headline %}
+    <h1>Modifier la catégorie : {{ entity.titre }}</h1>
+{% endblock %}
+
+{% block content %}
+
+	<div class="row">
+	    <div class="col-lg-10">
+			{{ form_start(edit_form, {'attr': {'class': 'form-horizontal back-form', 'novalidate': 'novalidate'}}) }}
+		  	
+				{{ form_rest(edit_form) }}
+
+
+	        <div class="bottom-buttons">
+	            <button type="submit" class="btn btn-success">Enregistrer</button>
+	            <a class="btn btn-default" href="{{ path('categorie') }}">Retour à la liste</a>
+	        </div>
+
+			{{ form_end(edit_form) }}
+		</div>
+	</div>
+
+{% endblock %}

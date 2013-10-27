@@ -1,0 +1,38 @@
+{% extends '::base.html.twig' %}
+{% from 'MopaBootstrapBundle::macros.html.twig' import label, badge %}
+
+{% block headline %}
+    <h1>Presse</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="col-lg-12">
+        <div class="header-buttons">    
+            <a class="btn btn-success pull-right" href="{{ path('presse_new') }}">Créer une image</a>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Date de publication</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for entity in entities %}
+                <tr>
+                    <td>{{ entity.titre }}</td>
+                    <td>{% if entity.dateModification %}{{ entity.dateModification|date('d/m/Y') }}{% endif %}</td>
+                    <td>
+                        <a class="btn btn-primary" href="{{ path('presse_show', { 'id': entity.id }) }}">Voir</a>
+                        <a class="btn btn-info" href="{{ path('presse_edit', { 'id': entity.id }) }}">Modifier</a>
+                        <a class="btn btn-danger" href="{{ path('presse_delete', { 'id': entity.id }) }}">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

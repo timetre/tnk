@@ -1,0 +1,15 @@
+#header_right #header_user{position:absolute;text-align:right;top:66px;width:auto;right:0}
+#header_user #your_account p{color:#7e7e7e;float:left;text-transform:inherit;position:absolute;top:15px;right:15px;font-size:12px;font-weight:400}
+#header_user #your_account p a{color:#7e7e7e;padding:0;text-transform:none;font-size:12px;font-weight:400;}
+#header_user span{color:#7e7e7e;font-size:12px;font-weight:400}
+#header_user a.account:hover span{color:#EE3C1F;}
+#header_user ul{#float:none;min-width:500px;#min-width:auto;}
+#header_user li{float:right;white-space:nowrap}
+#header_user li#shopping_cart{    min-width:104px;height:30px;color:#d9cec3;position:relative}
+#header_user li#shopping_cart span{line-height:43px;}
+#header_user li#shopping_cart span.ajax_cart_total{display:none!important}
+#header_user li#shopping_cart a{position:absolute;top:0px;right:0;color:#262525;font-size:12px;font-weight:bold;text-transform:uppercase;}
+#header_user li#your_account{margin-left:0;position:relative;border-right:1px solid #e5e5e5;padding-right:15px;height:30px;}
+#header_user #shopping_cart a,#header_user #your_account a{background-position:top left;background-repeat:no-repeat;padding:0 0 4px 0;text-decoration:none}
+#header_user #your_account a{color:#262525;text-transform:uppercase;font-size:12px;font-weight:bold;}
+#header_user #your_account a:hover,#header_user li#shopping_cart a:hover{/*color:#EE3C1F;*/color:#000000;}

@@ -1,0 +1,29 @@
+article:
+    pattern:  /
+    defaults: { _controller: "TNKBlogBundle:Article:index" }
+
+article_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TNKBlogBundle:Article:show" }
+
+article_new:
+    pattern:  /new
+    defaults: { _controller: "TNKBlogBundle:Article:new" }
+
+article_create:
+    pattern:  /create
+    defaults: { _controller: "TNKBlogBundle:Article:create" }
+    requirements: { _method: post }
+
+article_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TNKBlogBundle:Article:edit" }
+
+article_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TNKBlogBundle:Article:update" }
+    requirements: { _method: post|put }
+
+article_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TNKBlogBundle:Article:delete" }

@@ -1,3 +1,15 @@
-tnk_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: TNKBlogBundle:Default:index }
+TNKBlogBundle_categorie:
+    resource: "@TNKBlogBundle/Resources/config/routing/categorie.yml"
+    prefix:   /admin/categorie
+
+TNKBlogBundle_article:
+    resource: "@TNKBlogBundle/Resources/config/routing/article.yml"
+    prefix:   /admin/article
+
+TNKBlogBundle_presse:
+    resource: "@TNKBlogBundle/Resources/config/routing/presse.yml"
+    prefix:   /admin/presse
+
+TNKBlogBundle_blog:
+    resource: "@TNKBlogBundle/Resources/config/routing/blog-front.yml"
+    prefix:   /blog

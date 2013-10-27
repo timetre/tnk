@@ -1,0 +1,29 @@
+categorie:
+    pattern:  /
+    defaults: { _controller: "TNKBlogBundle:Categorie:index" }
+
+categorie_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TNKBlogBundle:Categorie:show" }
+
+categorie_new:
+    pattern:  /new
+    defaults: { _controller: "TNKBlogBundle:Categorie:new" }
+
+categorie_create:
+    pattern:  /create
+    defaults: { _controller: "TNKBlogBundle:Categorie:create" }
+    requirements: { _method: post }
+
+categorie_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TNKBlogBundle:Categorie:edit" }
+
+categorie_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TNKBlogBundle:Categorie:update" }
+    requirements: { _method: post|put }
+
+categorie_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TNKBlogBundle:Categorie:delete" }

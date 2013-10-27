@@ -23,6 +23,8 @@ class AppKernel extends Kernel
             new TNK\Bundle\GlobalBundle\TNKGlobalBundle(),
             new TNK\Bundle\AdminBundle\TNKAdminBundle(),
             new TNK\Bundle\BlogBundle\TNKBlogBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new TNK\Bundle\UserBundle\TNKUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

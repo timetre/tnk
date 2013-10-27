@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+    <head>
+        <title>The Nail Kitchen - Blog</title>
+        <meta name="description" content="The Nail Kitchen" />
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+        <meta http-equiv="content-language" content="fr" />
+        <meta name="generator" content="PrestaShop" />
+        <meta name="robots" content="index,follow" />
+        
+        <link href="/store/themes/et_urbanista/css/global.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/cms.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blockviewed/blockviewed.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blockcurrencies/blockcurrencies.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blockuserinfo/blockuserinfo.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blocklanguages/blocklanguages.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blocktags/blocktags.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/js/jquery/plugins/autocomplete/jquery.autocomplete.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/product_list.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blocksearch/blocksearch.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blocknewsletter/blocknewsletter.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/modules/csslider/jquery.nivo.slider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/modules/cshometab/cshometab.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blockcart/blockcart.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blockpermanentlinks/blockpermanentlinks.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/store/themes/et_urbanista/css/modules/blocktopmenu/css/superfish-modified.css" rel="stylesheet" type="text/css" media="all" />
+        
+        <script type="text/javascript" src="/store/js/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="/store/js/jquery/plugins/jquery.easing.js"></script>
+        <script type="text/javascript" src="/store/js/tools.js"></script>
+        <script type="text/javascript" src="/store/themes/et_urbanista/js/cms.js"></script>
+        <script type="text/javascript" src="/store/js/jquery/plugins/autocomplete/jquery.autocomplete.js"></script>
+        <script type="text/javascript" src="/store/modules/csslider/jquery.nivo.slider.js"></script>
+        <script type="text/javascript" src="/store/modules/cshometab/jquery-ui-tabs.min.js"></script>
+        <script type="text/javascript" src="/store/modules/cshometab/jquery.multipleelements.cs.js"></script>
+        <script type="text/javascript" src="/store/modules/blockcart/ajax-cart.js"></script>
+        <script type="text/javascript" src="/store/modules/blocktopmenu/js/hoverIntent.js"></script>
+        <script type="text/javascript" src="/store/modules/blocktopmenu/js/superfish-modified.js"></script>
+            
+    </head>
+    
+    <body id="cms">
+        <div class="wapper">
+            <div id="page" class="container_9 clearfix">
+                <!-- Header -->
+                <div id="header" class="grid_9 alpha omega" style="height: 60px;">
+
+                    <div class="logo_pres">
+                        <a id="header_logo" href="/store/index.php" title="The  Nail Kitchen">
+                            <img class="logo" src="/store/img/logo-1.jpg?1381250481" alt="The  Nail Kitchen" width="222" height="37">
+                        </a>
+                    </div>
+                    
+                    <div id="header_right" class="grid_6 omega"></div>
+    
+                    <div class="clearfix" style="float:left;height:38px;">
+                        <ul id="header_links">
+                            <li>
+                                <a href="{{ path('article_front_index') }}">Accueil blog</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('article_front_index_presse') }}">Accueil presse</a>
+                            </li>
+                            <li>
+                                <a href="/store/index.php" target="_blank" >Retour à la boutique</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="columns" class="grid_9 alpha omega clearfix">
+                    <div id="left_column" class="column grid_2 alpha">
+                        <div id="newsletter_block_left" class="block">
+                            <h4 class="title_block">Archives</h4>
+                            <div class="block_content">
+                                {% block archives %} {% endblock archives %}
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div id="center_column" class=" grid_5">
+                        {% block article %} {% endblock article %}
+                    </div>
+                </div>
+            
+            <div id="footer" class="grid_9 alpha omega clearfix">
+                <div class="footer_copyright">
+                    <div style="float: right;">
+                        <p class="copy">
+                            © Copyright 2013 - Tous droits réservés.<br /> <a href="/">The Nail Kitchen</a> - 
+                            <a>Mentions Légales</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

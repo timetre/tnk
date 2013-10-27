@@ -1,0 +1,5 @@
+div#viewed-products_block_left div.block_content ul.products li{margin:12px 0 20px}
+div#viewed-products_block_left div.block_content ul.products li a.product_image{width:62px;height:62px;float:left;margin-right:20px}
+div#viewed-products_block_left div.block_content ul.products li h5 a{color:#747373;font-size:12px;font-weight:400;font-family:'HelveticaBold';}
+div#viewed-products_block_left div.block_content ul.products li h5 a:hover{color:#747373;}
+div#viewed-products_block_left div.block_content ul.products li  p {color:#5a5a5a;font-size:12px;margin-top:5px}

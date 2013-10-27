@@ -1,0 +1,10 @@
+#my-account #center_column ul{border-bottom:1px solid #e1e1e1;float:left;margin:0 0 10px;padding-bottom:20px;width:100%}
+#my-account #center_column li{height:33px;line-height:33px;margin-bottom:10px;text-align:left;text-transform:none;width:300px;display:block;}
+#my-account #center_column li a.my_img{float:left;line-height:33px;width:33px;text-align:center;margin-right:15px;height:33px;}
+#my-account #center_column li a.my_img img{text-align:center;margin:0}
+#my-account #center_column li a{color:#7e7e7e;font-size:11px;font-weight:700;text-transform:uppercase;}
+#my-account #center_column li a img{margin-right:10px}
+#my-account #center_column li a img.icon{vertical-align:middle;#padding-top:7px;}
+#my-account p a{color:#7e7e7e;font-size:12px;font-weight:700;text-transform:none}
+#my-account #center_column li.my_history,#my-account #center_column li.my_address,#my-account #center_column li.my_history:hover,#my-account #center_column li.my_address:hover{background-position:left;}
+#my-account #center_column h4.wel{margin-bottom:15px;color:#7e7e7e;font-weight:400;}

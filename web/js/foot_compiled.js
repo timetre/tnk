@@ -3,7 +3,7 @@
  * http://twbs.github.com/bootstrap/javascript.html#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -389,7 +389,7 @@
  * Bootstrap: affix.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#affix
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -725,7 +725,7 @@
  * Bootstrap: carousel.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#carousel
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -943,7 +943,7 @@
  * Bootstrap: collapse.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#collapse
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1123,7 +1123,7 @@
  * Bootstrap: dropdown.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#dropdowns
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1278,7 +1278,7 @@
  * Bootstrap: modal.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#modals
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1525,7 +1525,7 @@
  * Bootstrap: popover.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#popovers
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1643,7 +1643,7 @@
  * Bootstrap: scrollspy.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#scrollspy
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1802,7 +1802,7 @@
  * Bootstrap: tab.js v3.0.0
  * http://twbs.github.com/bootstrap/javascript.html#tabs
  * ========================================================================
- * Copyright 2012 Twitter, Inc.
+ * Copyright 2013 Twitter, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1830,7 +1830,7 @@
   Tab.prototype.show = function () {
     var $this    = this.element
     var $ul      = $this.closest('ul:not(.dropdown-menu)')
-    var selector = $this.attr('data-target')
+    var selector = $this.data('target')
 
     if (!selector) {
       selector = $this.attr('href')
@@ -2034,12 +2034,13 @@
             this.options.index = {};
         }
 
-        this.options.index[this.options.collection_id] = $(itemSelector).length - 1;
+        this.options.index[this.options.collection_id] = this.options.initial_size;
     };
 
     Collection.prototype = {
         constructor: Collection,
         add: function () {
+            // this leads to overriding items
             this.options.index[this.options.collection_id] = this.options.index[this.options.collection_id] + 1;
             var index = this.options.index[this.options.collection_id];
             if ($.isFunction(this.options.addcheckfunc) && !this.options.addcheckfunc()) {
@@ -2062,16 +2063,9 @@
 
             var rowContent = $collection.attr('data-prototype').replace(replace_pattern, index);
             var row = $(rowContent);
-
-            if ($collection.attr('data-widget-items')) {
-                console.log("dahere");
-                $collection.children('.collection-items').append(row);
-            } else {
-                console.log("here");
-                console.log($collection);
-                $collection.find('.collection-items').append(row);
-            }
-
+            
+            $collection.children('.collection-items').append(row);
+            
             $collection.triggerHandler('add.mopa-collection-item', [row]);
         },
         remove: function () {
@@ -2104,6 +2098,7 @@
         	  options.collection_id = this.id.length === 0 ? '' : '#' + this.id;
           }
           if (!data){
+              options.initial_size = $this.parent().next('.collection-items').children().length;
               $this.data('collection', (data = new Collection(this, options)));
           }
           if (option == 'add') {
@@ -2117,6 +2112,7 @@
 
   $.fn.collection.defaults = {
     collection_id: null,
+    initial_size: 0,
     addcheckfunc: false,
     addfailedfunc: false
   };

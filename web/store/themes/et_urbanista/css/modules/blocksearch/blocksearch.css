@@ -1,0 +1,10 @@
+#header_right #search_block_top{height:28px;width:200px;z-index:100;position:absolute;right:5px;bottom:5px;padding-right:35px;padding-left:5px;background:#fff;}
+#header_right #search_block_top p{position:relative}
+#header_right #search_block_top input{background:url(../../../img/icon/search.png) no-repeat right top;float:left;height:12px;width:11px;padding:0;border:none}
+#header_right #search_block_top label{display:none;}
+#header_right #search_block_top input.button{right:-27px;text-indent:-9999px;position:absolute;top:9px;}
+#header_right #search_block_top input.search_query{
+    width:200px;float:right;border:none;background:#fff;height:28px;line-height:28px;overflow:hidden;display:block;}
+#search_block_left input{margin:2px 0 0}
+#search_block_left .search_query{width:11em}
+#search_button{display:inline}

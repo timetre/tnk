@@ -1,0 +1,16 @@
+article_front_index:
+    pattern:  /
+    defaults: { _controller: "TNKBlogBundle:Blog:show" }
+
+article_front_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TNKBlogBundle:Blog:show" }
+
+article_front_index_presse:
+    pattern:  /presse
+    defaults: { _controller: "TNKBlogBundle:Blog:showPresse" }
+
+article_front_show_presse:
+    pattern:  /presse/{id}/show
+    defaults: { _controller: "TNKBlogBundle:Blog:showPresse" }
+
